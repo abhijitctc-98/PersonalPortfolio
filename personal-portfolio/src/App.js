@@ -6,6 +6,7 @@ import { About } from './components/About'
 import { Contact } from './components/Contact'
 import { Projects } from './components/Projects'
 import { Achievements } from './components/Achievements'
+import { Academics } from './components/Academics'
 import { Loading } from './components/Loading'
 
 const NavItem = ({ to, children }) => (
@@ -44,6 +45,7 @@ export default function App() {
                 <ul className="flex justify-center space-x-6">
                   <NavItem to="/">Home</NavItem>
                   <NavItem to="/about">About</NavItem>
+                  <NavItem to="/academics">Academics</NavItem>
                   <NavItem to="/contact">Contact</NavItem>
                   <NavItem to="/projects">Projects</NavItem>
                   <NavItem to="/achievements">Achievements</NavItem>
@@ -53,6 +55,7 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/academics" element={<Academics />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/achievements" element={<Achievements />} />
